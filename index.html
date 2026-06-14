@@ -204,14 +204,14 @@ src="https://www.facebook.com/tr?id=2378495905979851&ev=PageView&noscript=1"
       const params = new URLSearchParams(window.location.search);
       const utmCampaign = params.get('utm_campaign');
       const eventId = randomId('e');
-      const baseMessage = 'Hola! quiero más informacion por favor!';
-      const campaignText = utmCampaign ? ` Vi el anuncio ${utmCampaign}.` : '';
+      const baseMessage = 'Hola!👋Quiero más informacion por favor!';
+      const campaignText = utmCampaign ? `\nVi el anuncio ${utmCampaign}.` : '';
       const referenceCode = buildReferenceCode(eventId, params);
-      const referenceText = referenceCode ? `\n\nCodigo promo: ${referenceCode}` : '';
+      const referenceText = referenceCode ? `\n🎁 Codigo promo: ${referenceCode}` : '';
 
       return {
         eventId,
-        text: encodeURIComponent(`${baseMessage}${campaignText} Mi nombre es:${referenceText}`)
+        text: encodeURIComponent(`${baseMessage}${campaignText}${referenceText}`)
       };
     }
 
