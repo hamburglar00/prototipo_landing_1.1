@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="facebook-domain-verification" content="a029s3k8xvkv6w1k4veucgwyfz6f69" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contactanos</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    .container {
+      max-width: 500px;
+      margin: 24px auto;
+      padding: 28px 18px;
+      background-image: url('fondo4_historia_instagram.avif');
+      background-size: cover;
+      background-position: center;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+      animation: fadeIn 0.8s ease-in;
+      text-align: center;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px);}
+      to { opacity:1; transform:translateY(0);}
+    }
+    .profile-pic {
+      width:200px;height:auto;object-fit:contain;
+      margin-bottom:6px;
+    }
+    .contact-name {
+      font-weight:800;font-size:1.5em;color:#ffd700;
+      text-shadow:0 0 6px rgba(0,0,0,0.7);margin-top:6px;
+    }
+    .contact-desc {
+      font-size:0.95em;color:#ffffff;font-weight:500;
+      text-shadow:0 0 4px rgba(0,0,0,0.6);margin:6px 0 4px;line-height:1.45;
+    }
+    .cta-button {
+      background:linear-gradient(90deg,#25d366,#128c7e);
+      color:white;padding:18px 18px;border:none;border-radius:10px;
+      font-size:0.95em;font-weight:700;line-height:1.25;cursor:pointer;text-decoration:none;
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:420px;box-sizing:border-box;margin-top:16px;animation:heartbeat 1.5s infinite;
+      box-shadow:0 0 15px #25d36680;transition:transform 0.2s ease;
+    }
+    .cta-button:hover {background:linear-gradient(90deg,#1ebe5d,#0c6f58);transform:scale(1.03);}
+    .cta-button span {flex:1;text-align:center;}
+    .cta-button img {width:24px;height:24px;display:block;flex:0 0 auto;}
+    @keyframes heartbeat {0%,100%{transform:scale(1);}50%{transform:scale(1.06);}}
+    .testimonials {margin-top:22px;font-size:0.9em;text-align:left;position:relative;cursor:pointer;}
+    .testimonial {
+      background-color:#2a2a2a;color:white;border-radius:10px 10px 10px 0;
+      padding:14px 18px;position:relative;max-width:85%;font-size:0.95em;
+      animation:fadeInBubble 0.5s ease;
+    }
+    .testimonial::after {
+      content:"";position:absolute;left:-10px;bottom:0;width:0;height:0;
+      border-right:10px solid #2a2a2a;border-top:10px solid transparent;
+    }
+    .progress-bar {
+      height:4px;background:#25d366;width:0%;border-radius:5px;
+      margin-top:8px;transition:width 5s linear;
+    }
+    @keyframes fadeInBubble {from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+    @media (max-width: 420px) {
+      .container {
+        width: 100%;
+        min-height: 100svh;
+        margin: 0 auto;
+        padding: 48px 16px 34px;
+        border-radius: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .profile-pic {width:min(220px,58vw);margin-bottom:10px;}
+      .contact-name {font-size:1.5em;margin-top:8px;line-height:1.15;}
+      .contact-desc {font-size:0.96em;line-height:1.38;margin:10px auto 4px;max-width:360px;}
+      .cta-button {padding:18px 16px;font-size:0.92em;gap:8px;margin-top:18px;min-height:76px;}
+      .cta-button img {width:22px;height:22px;}
+      .testimonials {margin-top:26px;}
+      .testimonial {max-width:100%;box-sizing:border-box;font-size:0.92em;line-height:1.45;}
+    }
+
+    @media (min-width: 421px) {
+      .container {min-height: calc(100svh - 80px);}
+    }
+  </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2378495905979851');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2378495905979851&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+  <script>
+    const whatsappNumbers = [
+      "5493562544439"  // ColoTest
+    ];
+
+    function safeStorageGet(key){
+      try { return localStorage.getItem(key); } catch { return null; }
+    }
+
+    function safeStorageSet(key, value){
+      try { localStorage.setItem(key, value); } catch {}
+    }
+
+    function safeUUID(){
+      if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+        const r = Math.random() * 16 | 0;
+        const v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+      });
+    }
+
+    function getOrCreateExternalId(){
+      let externalId = safeStorageGet('external_id');
+      if (!externalId) {
+        externalId = safeUUID();
+        safeStorageSet('external_id', externalId);
+      }
+      return externalId;
+    }
+
+    function getCookie(name){
+      const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+      return match ? match[2] : '';
+    }
+
+    function getFbc(params){
+      const cookieFbc = getCookie('_fbc');
+      if (cookieFbc) {
+        safeStorageSet('stored_fbc', cookieFbc);
+        return cookieFbc;
+      }
+
+      const storedFbc = safeStorageGet('stored_fbc');
+      if (storedFbc) return storedFbc;
+
+      const fbclid = params.get('fbclid');
+      if (!fbclid) return '';
+
+      const fbc = `fb.1.${Date.now()}.${fbclid}`;
+      safeStorageSet('stored_fbc', fbc);
+      return fbc;
+    }
+
+    function getFbp(){
+      const cookieFbp = getCookie('_fbp');
+      if (cookieFbp) {
+        safeStorageSet('stored_fbp', cookieFbp);
+        return cookieFbp;
+      }
+
+      const storedFbp = safeStorageGet('stored_fbp');
+      if (storedFbp) return storedFbp;
+
+      const fbp = `fb.1.${Date.now()}.${Math.floor(Math.random() * 10000000000)}`;
+      safeStorageSet('stored_fbp', fbp);
+      return fbp;
+    }
+
+    function buildReferenceCode(eventId, params){
+      const values = {
+        c: getFbc(params),
+        p: getFbp(),
+        x: getOrCreateExternalId(),
+        e: eventId
+      };
+
+      return Object.entries(values)
+        .filter(([, value]) => Boolean(value))
+        .map(([key, value]) => `${key}=${value}`)
+        .join('|');
+    }
+
+    function getWhatsAppMessage(){
+      const params = new URLSearchParams(window.location.search);
+      const utmCampaign = params.get('utm_campaign');
+      const eventId = safeUUID();
+      const baseMessage = 'Hola! quiero más informacion por favor!';
+      const campaignText = utmCampaign ? ` Vi el anuncio ${utmCampaign}.` : '';
+      const referenceCode = buildReferenceCode(eventId, params);
+      const referenceText = referenceCode ? `\n\nCodigo de referencia: ${referenceCode}` : '';
+
+      return {
+        eventId,
+        text: encodeURIComponent(`${baseMessage}${campaignText} Mi nombre es:${referenceText}`)
+      };
+    }
+
+    function goToWhatsApp(){
+      const whatsappNumber = whatsappNumbers[Math.floor(Math.random() * whatsappNumbers.length)];
+      const message = getWhatsAppMessage();
+      fbq('track','Contact', {}, { eventID: message.eventId });
+      window.location.href=`https://wa.me/${whatsappNumber}?text=${message.text}`;
+    }
+
+    const testimonios=[
+      'Romina S.: "Pense que iban a tardar, pero me contestaron enseguida."',
+      'Juan Pablo T.: "Me atendieron bien, sin vueltas. Por WhatsApp fue todo bastante simple."',
+      'Susana D.: "Tenia mil dudas y me las fueron respondiendo una por una."',
+      'Diego A.: "Buena onda la atencion, me respondieron rapido y claro."',
+      'Camila R.: "No sabia bien que tenia que hacer y me guiaron paso a paso."',
+      'Luis F.: "Me gusto que no me dejaron colgado, respondieron bastante rapido."',
+      'Emilia B.: "Muy amables por WhatsApp, me explicaron todo tranqui."'
+    ];
+    let current=0;
+    function updateTestimonio(){
+      const tDiv=document.getElementById('testimonial-text');
+      const pBar=document.getElementById('progress-bar');
+      tDiv.innerText=testimonios[current];
+      pBar.style.transition='none';
+      pBar.style.width='0%';
+      setTimeout(()=>{
+        pBar.style.transition='width 5s linear';
+        pBar.style.width='100%';
+      },10);
+      current=(current+1)%testimonios.length;
+    }
+    window.onload=()=>{
+      updateTestimonio();
+      setInterval(updateTestimonio,5000);
+    };
+  </script>
+</head>
+<body>
+ 
+  <div class="container">
+
+    <a href="javascript:void(0);" onclick="goToWhatsApp()">
+      <img src="don_social_32_transparente_comprimido.avif" alt="Perfil" class="profile-pic" />
+    </a>
+
+    <div class="contact-name"> DIVERTITE AHORA MISMO</div>
+    <div class="contact-desc">Envianos un mensaje tocando el boton de abajo<br />y reclama tu regalo de bienvenida</div>
+
+    <a class="cta-button" href="javascript:void(0);" onclick="goToWhatsApp()"><span>PEDIR MI USUARIO GRATIS AHORA</span><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" /></a>
+
+    <div class="testimonials" onclick="goToWhatsApp()">
+      <div class="testimonial" id="testimonial-text"></div>
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
